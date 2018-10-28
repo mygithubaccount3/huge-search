@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(215, 213, 213, 0.4);
+    color: #c2c2c2;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.search {
+    display: inline-block;
+    color: #ec5a62;
+    font-size: 600%;
+    background-color: rgba(215, 213, 213, 0.0);
+    border: none;
+    position: relative;
+    width: 90%;
+    padding: 0;
+}
+
+::placeholder {
+    color: #9e9d9d;
+    font-weight: bold;
+}
+
+.magnifier {
+    display: inline-block;
+    position: relative;
+    width: 10%;
+}
+
+.people, .popular, .recent {
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    width: 31.3%;
+    margin-right: 2%;
+    padding: 0;
+}
+
+.caption {
+    background-color: rgba(215, 213, 213, 0);
+    color: #9e9d9d;
+}
+
+li {
+    background-color: rgba(118,117,128,0.1);
+    margin-bottom: 2%;
+    position: relative;
+    font-size: 88%;
+}
+
+li:not(.caption) {
+    padding: 3%;
+}
+
+li:not(.caption):hover {
+    background-color: rgba(118, 117, 128, 0.21);
+}
+
+.avatar {
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    margin-right: 5%;
+}
+
+img:not(.avatar) {
+    margin-right: 5%;
+}
+
+.name {
+    position: absolute;
+    bottom: 35%;
+    text-decoration: none;
+}
+
+.name:hover {
+    color: #ec5a62;
+}
